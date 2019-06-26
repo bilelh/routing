@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { PATH_HOME } from 'src/app/app.routes.constantes';
 
 @Component({
   selector: 'app-detail',
@@ -7,7 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailComponent implements OnInit {
 
-  constructor() { }
+  idDetail:number = 0;
+
+  constructor(private router: Router) { }
+
+  
+
+  navigateToHome() {
+    this.router.navigate([PATH_HOME]);
+  }
+
+  
 
   ngOnInit() {
   }

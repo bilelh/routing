@@ -6,7 +6,7 @@ import { PATH_HOME, PATH_DETAIL } from './app.routes.constantes';
 
 const routes: Routes = [
   { path: PATH_HOME, component: HomeComponent },
-{ path: PATH_DETAIL, component: DetailComponent }
+{ path: PATH_DETAIL+ ":idDetail", component: DetailComponent }
 ];
 
 @NgModule({
