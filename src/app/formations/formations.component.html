@@ -1,8 +1,8 @@
 <p>formations works!</p>
 
 <h2>Liste des formations</h2>
-<ul>
-    <li *ngFor="let formation of formations">
+<ul *ngFor="let formation of formations">
+    <li>
         <p>{{formation.id}} - {{ formation.name }}</p>
     </li>
 </ul>

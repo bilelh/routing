@@ -8,6 +8,7 @@ import { DetailComponent } from './routes/detail/detail.component';
 import { FormationsComponent } from './formations/formations.component';
 import { ConnaissancesComponent } from './connaissances/connaissances.component';
 import { LoggedIn } from './guards/loggedIn';
+import { FormationsResolvers } from './resolvers/formationsResolvers';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LoggedIn } from './guards/loggedIn';
     AppRoutingModule
   ],
   providers: [
-    LoggedIn
+    LoggedIn,
+    FormationsResolvers
   ],
   bootstrap: [AppComponent]
 })

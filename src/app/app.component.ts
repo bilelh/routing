@@ -15,13 +15,7 @@ export class AppComponent {
 
 
   ngOnInit() {
-    /* this.router.events.subscribe((event) => {
-      console.log('EVENTS', event);
-    }); */
-    /* this.route.paramMap.subscribe((params:ParamMap) => {
-      console.log('isDetail', params.get('idDetail'))
-    }) */
-
+    
   }
 
 }

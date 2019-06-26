@@ -27,7 +27,9 @@ export class DetailComponent implements OnInit {
     this.route.paramMap.subscribe((params: ParamMap) => {
       console.log('isDetail', params.get('idDetail'));
       });
+
+      this.route.data.subscribe(data => 
+        console.log('Formations', data['formations']));
   }
   
-
 }
