@@ -17,8 +17,6 @@ export class HomeComponent implements OnInit {
     this.router.navigate([PATH_DETAIL, this.idDetail]);
   }
 
-  
-
   ngOnInit() {
   }
 
