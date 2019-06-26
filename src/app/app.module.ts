@@ -7,6 +7,7 @@ import { HomeComponent } from './routes/home/home.component';
 import { DetailComponent } from './routes/detail/detail.component';
 import { FormationsComponent } from './formations/formations.component';
 import { ConnaissancesComponent } from './connaissances/connaissances.component';
+import { LoggedIn } from './guards/loggedIn';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { ConnaissancesComponent } from './connaissances/connaissances.component'
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    LoggedIn
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
